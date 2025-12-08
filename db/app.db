@@ -1,0 +1,16 @@
+CREATE DATABASE sistema_vagas_db;
+-- Use o banco de dados que você acabou de criar
+USE sistema_vagas_db;
+
+-- Cria a tabela 'jobs' com a estrutura baseada no seu modelo Job.js
+CREATE TABLE jobs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description VARCHAR(255),
+    salary VARCHAR(255),
+    company VARCHAR(255),
+    email VARCHAR(255),
+    new_job INT,
+    createdAt DATETIME NOT NULL,
+    updatedAt DATETIME NOT NULL
+);
